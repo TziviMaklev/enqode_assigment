@@ -1,8 +1,6 @@
 # Full Stack Developer - Assignment
 
 
-## Setup
-
 ### Part 1: JavaScript
 
 
