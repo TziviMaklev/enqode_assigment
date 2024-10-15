@@ -53,13 +53,6 @@ curl http://localhost:3000/search/example.com
 
 This will return JSON data containing search results from the dark web related to your query.
 
-### Frontend Interface
-
-1. Open `index.html` in a web browser.
-2. Enter your search term in the provided field and click "Search".
-3. Results will be displayed on the page.
-
-Note: Make sure to update the `API_KEY` in `index.html` as well if you plan to use the frontend interface directly.
 
 ## Testing
 
