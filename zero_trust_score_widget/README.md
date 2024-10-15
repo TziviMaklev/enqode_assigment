@@ -120,16 +120,17 @@ export default {
   data() {
     return {
       zeroTrustData: {
-        companyName: "FinTechSecure Ltd.",
-        ZeroTrustScore: 58.5,
-        metrics: {
-          networkSecurity: 75,
-          dataEncryption: 80,
-          accessControl: 60,
-          // ... other metrics
-        },
-        riskCategory: "Moderate Risk"
-      }
+         "companyName": "enqode",
+         "ZeroTrustScore": 75,
+         "metrics": {
+            "passwordStrength": 85,
+            "httpsEnabled": true,
+            "firewallEnabled": true,
+            "softwareUpdates": 95
+          },
+         "riskCategory": "סיכון בינוני",
+         "timestamp": "2023-11-22T10:35:27Z"
+       }
     }
   }
 }
