@@ -48,4 +48,7 @@ The element in position 4 is: 25
 
 https://github.com/TziviMaklev/enqode_assigment/tree/main/darkweb-scanner
 
+### Part 3: Zero-Trust Score Widget
+https://github.com/TziviMaklev/enqode_assigment/tree/main/zero_trust_score_widget
+
  
