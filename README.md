@@ -1,84 +1,45 @@
-# Darkweb Scanner API
+# Full Stack Developer - Assignment
 
-This project implements a Darkweb Scanner API using the IntelX service. It includes both a frontend HTML interface and a backend Node.js server to query dark web data relevant to a specified domain or company.
 
-## Setup
+Part 1: JavaScript
 
-### Prerequisites
 
-- Node.js and npm installed on your system
-- An API key from IntelX (You can sign up at https://intelx.io/)
+It operates in a VAR that is global and not local.
+This means that all setTimeout calls have the same i variable.
+When the loop ends, the value of i will be the size of the array, i.e. 5.
+In the end all calls will print the same calls in the console because this time.
+This is what will be printed:
 
-### Installation
+The element in position 5 is: undefined
+The element in position 5 is: undefined
+The element in position 5 is: undefined
+The element in position 5 is: undefined
+The element in position 5 is: undefined
 
-1. Clone this repository to your local machine.
-2. Navigate to the project directory in your terminal.
-3. Install the required dependencies:
+The first time this function prints a value is after 5 seconds, then the loop ends and the value of i is 5.
+The array[i] value is undefined because the array is 5 in size as the array ends in 4 (from 0 to 4).
+To fix this we will use a let that creates a local modifier for each iteration in the loop like this the code will look like:
 
-   ```
-   npm install express axios
-   ```
 
-4. Open `app.js` and replace the `API_KEY` constant with your IntelX API key:
 
-   ```javascript
-   const API_KEY = 'your-api-key-here';
-   ```
+const array = [12, 10, 22, 5, 25];
+for (let i = 0; i < array.length; i++) {
+    setTimeout(function () {
+        console.log("The element in position " + i + " is: " + array[i]);
+    }, 5000);
+}
 
-## Usage
 
-### Starting the Server
 
-1. In the project directory, run:
 
-   ```
-   node app.js
-   ```
+And this is the output:
 
-2. The server will start running on `http://localhost:3000` (or the port specified in your environment variables).
+The element in position 0 is: 12
+The element in position 1 is: 10
+The element in position 2 is: 22
+The element in position 3 is: 5
+The element in position 4 is: 25
 
-### Using the API
 
-The API exposes a single endpoint:
 
-- `GET /search/:data`
-
-Replace `:data` with the search term you want to query.
-
-Example using cURL:
-
-```
-curl http://localhost:3000/search/example.com
-```
-
-This will return JSON data containing search results from the dark web related to your query.
-
-### Frontend Interface
-
-1. Open `index.html` in a web browser.
-2. Enter your search term in the provided field and click "Search".
-3. Results will be displayed on the page.
-
-Note: Make sure to update the `API_KEY` in `index.html` as well if you plan to use the frontend interface directly.
-
-## Testing
-
-You can test the API using Postman or any similar API testing tool:
-
-1. Set up a GET request to `http://localhost:3000/search/:data`
-2. Replace `:data` with your search term
-3. Send the request and examine the response
-
-## Limitations and Considerations
-
-- The current implementation is limited to 10 results per search.
-- Ensure you comply with IntelX's terms of service and usage limits.
-- Be cautious when handling potentially sensitive information returned from dark web searches.
-
-## Future Improvements
-
-- Implement error handling and input validation
-- Add rate limiting to prevent API abuse
-- Enhance the frontend interface with better styling and more features
-- Implement caching to improve performance and reduce API calls
-
+ 
