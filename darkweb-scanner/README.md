@@ -32,7 +32,7 @@ This project implements a Darkweb Scanner API using the IntelX service. It inclu
 1. In the project directory, run:
 
    ```
-   node app.js
+   npm run server
    ```
 
 2. The server will start running on `http://localhost:3000` (or the port specified in your environment variables).
