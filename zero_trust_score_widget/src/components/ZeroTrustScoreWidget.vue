@@ -15,15 +15,13 @@
               </v-list-item-subtitle>
             </v-list-item-content>
             <v-list-item-addon>
-              <v-progress-linear
-                v-if="Number.isInteger(metric.score)"
-                :model-value="metric.score"
-                :max="100"
-                class="metric-progress"
-              ></v-progress-linear>
-              <V-switch v-else v-model="metric.score"></V-switch>
-  
-              <v-spacer></v-spacer>
+                <v-progress-linear
+              v-if="Number.isInteger(metric.score)"
+              :model-value="metric.score"
+              :max="100"
+              class="metric-progress"
+            ></v-progress-linear>
+            <V-switch v-else v-model="metric.score"></V-switch>
               <span class="metric-score"> {{ metric.score }} </span>
             </v-list-item-addon>
           </v-list-item>
@@ -36,7 +34,8 @@
   </template>
   
   <script>
-  import "../style.css"
+  import '../style.css'
+
     export default {
       props: {
         data: {
