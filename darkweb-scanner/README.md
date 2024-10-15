@@ -1,6 +1,6 @@
 # Darkweb Scanner API
 
-This project implements a Darkweb Scanner API using the IntelX service. It includes both a frontend HTML interface and a backend Node.js server to query dark web data relevant to a specified domain or company.
+This project implements a Darkweb Scanner API using the IntelX service. It includes a backend Node.js server to query dark web data relevant to a specified domain or company.
 
 ## Setup
 
