@@ -1,7 +1,11 @@
 # Full Stack Developer - Assignment
 
 
-Part 1: JavaScript
+## Setup
+
+### Part 1: JavaScript
+
+
 
 
 It operates in a VAR that is global and not local.
