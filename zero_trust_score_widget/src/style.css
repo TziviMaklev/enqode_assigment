@@ -1,0 +1,39 @@
+.zero-trust-score-widget {
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 1.2rem;
+  }
+  .companyName {
+    font-size: 3rem;
+    font-weight: bold;
+  margin-left: 43vw;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .score-container {
+    text-align: center;
+    /* background-color: #e6f7ff; */
+    padding: 16px;
+    border-radius: 8px;
+  }
+  
+  .metrics-list {
+    margin-bottom: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-left: 35vw;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    background-color: bisque;
+  }
+  .metric-score {
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  .button {
+    margin-left: 40vw;
+  }
+  
