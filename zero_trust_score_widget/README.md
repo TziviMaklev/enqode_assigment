@@ -5,7 +5,7 @@ This Vue.js component visualizes a company's Zero-Trust Score based on provided 
 ## runs on Vuetify
 - Copying the Vuetify files:  App.vue , ZeroTrustScoreWidget.vue ,date.json and style.css .
 - In the ZeroTrustScoreWidget file from the <script> tag delete the link to style.css .
-  -העת הקבצים App.vue
+ 
 ## Features
 
 - Displays overall Zero-Trust Score
