@@ -7,7 +7,7 @@ This project implements a Darkweb Scanner API using the IntelX service. It inclu
 ### Prerequisites
 
 - Node.js and npm installed on your system
-- An API key from IntelX (You can sign up at https://intelx.io/)
+- An API key from IntelX (You can sign up at https://intelx.io/ and after Click on https://intelx.io/account?tab=developer To see the API )
 
 ### Installation
 
