@@ -2,7 +2,7 @@ const app = express();
 import express  from 'express';
 import axios from 'axios';
 const API_URL = 'https://2.intelx.io/';
-const API_KEY = 'e3a92b33-90a7-4355-aaaf-b8b87635fe4c';
+const API_KEY = 'e3a92b33-90a7-4355-aaaf-b8b87635fe4c';// change it to you API
 
 app.use(express.json());
 
